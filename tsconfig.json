@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",             // Define a versão do ECMAScript para a qual o código será compilado
+    "module": "commonjs",           // Define o sistema de módulos como CommonJS
+    "strict": true,                 // Habilita todas as verificações estritas de tipo
+    "esModuleInterop": true,        // Habilita a interoperabilidade com módulos ES6
+    "skipLibCheck": true,           // Pula a verificação de tipo para arquivos de declaração
+    "forceConsistentCasingInFileNames": true, // Garante a consistência de maiúsculas e minúsculas nos nomes de arquivos
+    "outDir": "./dist",             // Diretório onde os arquivos compilados serão colocados
+    "rootDir": "./src",             // Diretório raiz de onde os arquivos de entrada são retirados
+    "moduleResolution": "node",     // Configura a resolução de módulos para o Node.js
+    "resolveJsonModule": true,      // Permite a importação de arquivos JSON
+    "typeRoots": ["./node_modules/@types"], // Define onde os tipos estão localizados
+    "lib": ["ES2020"],              // Inclui bibliotecas padrão do ES2020
+    "strictPropertyInitialization": false // Desativa a verificação de inicialização de propriedades
+  },
+  "include": ["src"],                // Inclui todos os arquivos TypeScript na pasta src
+  "exclude": ["node_modules", "**/*.spec.ts"] // Exclui a pasta node_modules e arquivos de teste
+}
